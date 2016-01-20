@@ -7,9 +7,9 @@
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/img/icons/favicon.png" />
+    <link rel="shortcut icon" href="/assets/img/favicon.png" />
     <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" href="/assets/img/icons/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/img/favicon.png" />
     <!-- Android Lolipop Theme Color -->
     <meta name="theme-color" content="#00cc00">
 
@@ -24,4 +24,8 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-72664900-1', 'auto');
   ga('send', 'pageview');
+</script>
+<script src="js/snowfall.min.js"></script>
+<script>
+  document.snowfall({image :"/assets/img/leaf.png", minSize: 10, maxSize:25});
 </script>
